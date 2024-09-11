@@ -3,42 +3,32 @@ import styled from "styled-components";
 export const Nav = styled.nav`
   display: grid;
   grid-template-columns: max-content auto max-content;
-  grid-template-rows: 50px;
-  grid-template-areas: "a1 a2 a3";
-  align-items: center;
-  height: 50px;
-  padding-left: 10px;
+  align-items: end;
+  padding: 10px 20px 10px 10px;
   background-color: rgba(237, 224, 206);
   color: rgb(101, 43, 35);
+  gap: 5px;
+  white-space: nowrap;
 `;
 
 export const Img = styled.img`
-  grid-area: a1;
-  width: 25px;
+  width: 30px;
+  padding-bottom: 5px;
 `;
 
 export const Title = styled.h1`
-  grid-area: a2;
-  height: 50px;
-  font-size: 2rem;
-  line-height: 50px;
+  font-size: 3rem;
+  // font-size: clamp(1rem, 0.3043rem + 2.1739vw, 2.5rem);
 `;
 
 export const Ul = styled.ul`
-  grid-area: a3;
   display: grid;
-  grid-auto-flow: column;
   grid-template-columns: auto auto auto auto;
   gap: 20px;
-  list-style-type: none;
-  padding: 0 20px 0 0;
-  margin-left: 0;
-  align-items: center;
+  font-size: 20px;
 `;
 
 export const Li = styled.li`
-  display: flex;
-  align-items: center;
   cursor: pointer;
   border-bottom: 2px solid rgba(237, 224, 206);
   transition: border-bottom-color 0.2s ease-in-out;

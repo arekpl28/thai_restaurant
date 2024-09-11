@@ -4,25 +4,21 @@ import { device } from "../utils/variables";
 export const Nav = styled.nav`
   display: grid;
   grid-template-columns: max-content auto max-content;
-  align-items: end;
   padding: 10px 10px 5px 10px;
+  align-items: end;
+  white-space: nowrap;
   background-color: rgba(237, 224, 206);
   color: rgb(101, 43, 35);
-  white-space: nowrap;
-
   @media screen and ${device.mobileM} {
     padding: 10px 10px 7px 10px;
     gap: 2px;
   }
-
   @media screen and ${device.mobileL} {
     gap: 3px;
   }
-
   @media screen and ${device.tablet} {
     padding: 10px 15px 9px 15px;
   }
-
   @media screen and ${device.laptopS} {
     padding: 10px 15px 10px 15px;
     gap: 5px;
@@ -30,16 +26,11 @@ export const Nav = styled.nav`
   @media screen and ${device.laptopM} {
     padding: 15px 20px 12px 20px;
   }
-  // @media screen and ${device.laptopL} {
-  //   padding: 15px 20px 12px 20px;
-  // }
 `;
 
 export const Img = styled.img`
-  // width: 30px;
   width: 12px;
   padding-bottom: 2px;
-
   @media screen and ${device.mobileM} {
     width: 14px;
   }
@@ -62,8 +53,6 @@ export const Img = styled.img`
 
 export const Title = styled.h1`
   font-size: 1.5rem;
-  // font-size: clamp(1rem, 0.3043rem + 2.1739vw, 2.5rem);
-
   @media screen and ${device.mobileM} {
     font-size: 1.8rem;
   }
@@ -93,9 +82,8 @@ export const Ul = styled.ul`
 
 export const Li = styled.li`
   font-size: 1rem;
-
-  cursor: pointer;
   border-bottom: 2px solid rgba(237, 224, 206);
+  cursor: pointer;
   transition: border-bottom-color 0.2s ease-in-out;
   @media screen and ${device.tablet} {
     font-size: 1.2rem;
@@ -109,7 +97,6 @@ export const Li = styled.li`
   @media screen and ${device.laptopL} {
     font-size: 2rem;
   }
-
   &:hover {
     border-bottom-color: rgb(101, 43, 35);
   }

@@ -2,9 +2,9 @@ import styled from "styled-components";
 import { device } from "../utils/variables";
 
 export const BgImage = styled.div`
-  max-width: 1440px;
-  width: 100%;
   position: relative;
+  width: 100%;
+  max-width: 1440px;
   aspect-ratio: 1440 / 480;
   background-image: url("banner.jpg");
   background-size: cover;
@@ -13,8 +13,8 @@ export const BgImage = styled.div`
 `;
 
 export const DivContainer = styled.div`
-  display: grid;
   position: absolute;
+  display: grid;
   top: 17%;
   left: 15%;
   text-align: center;
@@ -22,10 +22,10 @@ export const DivContainer = styled.div`
 
 export const Title = styled.h1`
   font-size: 2.1rem;
-  color: rgb(101, 43, 35);
-  font-family: "Playfair Display", serif;
   text-underline-offset: 4px;
   text-decoration: underline;
+  color: rgb(101, 43, 35);
+  font-family: "Playfair Display", serif;
   @media screen and ${device.mobileM} {
     font-size: 2.5rem;
     text-underline-offset: 5px;
@@ -58,11 +58,11 @@ export const Title = styled.h1`
 export const Subtitle = styled.h2`
   font-size: 0.6rem;
   padding-top: 6px;
-  color: rgb(101, 43, 35);
   text-transform: uppercase;
   letter-spacing: 0.5px;
-  font-weight: normal;
   font-family: "Roboto", sans-serif;
+  font-weight: normal;
+  color: rgb(101, 43, 35);
   @media screen and ${device.mobileM} {
     font-size: 0.8rem;
   }
@@ -75,8 +75,8 @@ export const Subtitle = styled.h2`
   }
   @media screen and ${device.tablet} {
     font-size: 1.5rem;
-    letter-spacing: 1px;
     padding-top: 10px;
+    letter-spacing: 1px;
   }
   @media screen and ${device.laptopS} {
     font-size: 2rem;
@@ -84,30 +84,25 @@ export const Subtitle = styled.h2`
   }
   @media screen and ${device.laptopM} {
     font-size: 2.4rem;
-    letter-spacing: 2px;
     padding-top: 20px;
+    letter-spacing: 2px;
   }
   @media screen and ${device.laptopL} {
     font-size: 2.7rem;
-    line-height: 40px;
-    padding-top: 1px;
+    padding-top: 20px;
     letter-spacing: 2px;
-    margin: 5px 0;
-    font-weight: normal;
   }
 `;
 
 export const SoonButton = styled.button`
-  display: inline-block;
-  padding: 2px 5px;
   margin-top: 3px;
+  padding: 2px 5px;
+  font-size: 4px;
+  text-transform: uppercase;
   background-color: rgb(101, 43, 35);
   color: #eee;
-  text-transform: uppercase;
-  border-radius: 10px;
-  font-size: 4px;
-  border: none;
   cursor: pointer;
+  border: none;
   border-radius: 30px;
   @media screen and ${device.mobileM} {
     font-size: 5px;
@@ -116,27 +111,27 @@ export const SoonButton = styled.button`
     font-size: 6px;
   }
   @media screen and ${device.phablet} {
+    font-size: 8px;
     padding: 3px 5px;
     margin-top: 7px;
-    font-size: 8px;
     letter-spacing: 1px;
   }
   @media screen and ${device.tablet} {
+    font-size: 9px;
     padding: 5px 5px;
     margin-top: 10px;
-    font-size: 9px;
     letter-spacing: 1px;
   }
   @media screen and ${device.laptopS} {
+    font-size: 12px;
     padding: 5px 5px;
     margin-top: 14px;
-    font-size: 12px;
     letter-spacing: 1px;
   }
   @media screen and ${device.laptopM} {
+    font-size: 15px;
     padding: 8px 5px;
     margin-top: 15px;
-    font-size: 15px;
     letter-spacing: 2px;
   }
   @media screen and ${device.laptopL} {

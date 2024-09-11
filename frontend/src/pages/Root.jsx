@@ -1,6 +1,6 @@
 import { Outlet } from "react-router-dom";
 import MainNavigation from "../components/MainNavigation.jsx";
-import Banner from "../components/Banner";
+import Banner from "../components/Banner.jsx";
 
 function RootLayout() {
   return (
